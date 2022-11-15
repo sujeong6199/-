@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form method="get">
+    <fieldset>
+        <legend>회원가입</legend>
+            
+            <p><label>아이디</label>
+            <input type="text" size="30" value="5~20자 내로 입력해주세요." maxlength="30"></p>
+            <p><label>비밀번호</label>
+            <input type="password"></p></p>
+        
+    </fieldset>
+    <fieldset>
+        <legend>상품 선택</legend>
+        <label>검색<input type="search"></label>
+        <p>주문상품을 선택하세요</p>
+        <label><input type="checkbox" value="iphon 14">iphon 14</label>
+        <label><input type="checkbox" value="iphon pro 14">iphon pro 14</label>
+        <label><input type="checkbox" value="iphon max 14">iphon max 14</label>
+        <p>포장 선택</p>
+        <label>
+<input type="radio" name="pack">포장 o
+        </label>
+        <input type="radio" name="pack" value="packeys" cecked>포장 x
+        </label>
+        
+    </fieldset>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>
+                <label for="addr">배송 주소</label>
+                <input type="address" id="addr">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="mail">이메일 주소</label>
+                <input type="email" id="mail">
+            </li>
+        </ul>
+    </fieldset>
+    <div>
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </div>
+   </form>
+
+<h1>회원 가입을 환영합니다</h1>
+<form>
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+            <li><label>아이디</label> <input type="text" value="5~30자 내로 입력하세요"></li>
+            <li><label>이메일</label><input type="text"></li>
+            <li><label>비밀번호</label><input type="password"></li>
+            <li><label>비밀번호 확인</label><input type="password"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <label><input type="radio" name="pack">메일 수신</label>
+        <label><input type="radio" name="pack">메일 수신 안함</label>
+    </fieldset>
+
+    <div>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+     </div>
+</form>
+
+<form>
+    <fieldset>
+        <legend>숫자</legend>
+        <input type="number" min="-3" max="7" value="3" step="2">
+        <input type="range" min="0" max="5" value="3">
+    </fieldset>
+
+    <fieldset>
+        <legend>날짜</legend>
+        <p>
+        <input type="date" min="2022-10-05" max="2022-11-16" value="2022-11-15">
+        <input type="month" min="2019-03" max="2022-12" value="2022-11">
+        <input type="week" min="2022-w37" max="2022-w43" value="2022-w39">
+        </p>
+
+        <p>
+            <input type="time" min="12:35" max="16:30">
+            <input type="datetime-local" min="2022-11-15 12:25">
+        </p>
+
+        <div>
+            <input type="button" value="알림 창 띄우기" onclick="alert('알림!');">
+            <input type="image" src="img/1.jpg" ait="다람쥐 그림">
+            <input type="file">
+            <input type="hidden" name="test" value="1234">
+        
+        </div>
+    </fieldset>
+<fieldset>
+    <legend>텍스트영역</legend>
+    <input type="text">
+    <textarea rows="4" cols="40"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>드롭 다운</legend>
+    <p>과일 선택</p>
+    <select size="2" multiple>
+        <option value="starwberry">딸기</option>
+        <option value="apple">사과</option>
+        <option value="pear">배</option>
+        <option vale="melon">참외</option>
+    
+    </select>
+</fieldset>
+
+
+</form>
+
+</body>
+</html>

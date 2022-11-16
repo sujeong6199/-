@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>
+                <label for="user-uid">고유 아이디</label>
+                <input type="text" id="user-uid" readonly disabled value="1234">
+            </p>
+
+            <p>
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id"
+                autofocus placeholder="5~30자 내로 입력하세요">
+            </p>
+
+            <p>
+                <label for="user-pw">비밀번호</label>
+                <input type="password" id="user-pw" autofocus placeholder="5~30자 내로 입력하세요" required>
+            </p>
+        </fieldset>
+
+        <div>
+            <input type="submit">
+            <input type="color">
+        </div>
+    </form>
+
+<h1>회원 가입을 환영합니다</h1>
+<form>
+    <fieldset>
+    <legend>사용자 정보</legend>
+    <ul>
+        <li><label for="user-id">아이디</label >
+        <input type="text" maxlength="10" id="user-id" autofocus placeholder="4~10자 사이, 공백없이" 
+        required oninvalid="this.setCustomValidity('아이디는 필수로 작성하셔야 합니다.')"></li>
+
+        <li><label for="user-email">이메일</label>
+            <input type="email" id="user-email" 
+            required oninvalid="this.setCustomValidity('메일은 필수로 작성하셔야 합니다.')"></li>
+
+         <li><label for="user-pw">비밀번호</label>
+        <input type="password" id="user-password" autofocus placeholder="문자와 숫자, 특수 기호 포함" 
+        required oninvalid="this.setCustomValidity('비밀번호는 필수로 작성하셔야 합니다.')"></li>
+
+        <li><label for="user-pw2">비밀번호 확인</label>
+            <input type="password" id="user-pw2" 
+            required oninvalid="this.setCustomValidity('비밀번호 확인은 필수로 작성하셔야 합니다.')"></li>
+
+        <li><label>가입경로
+            <select>
+                <option>블로그</option>
+                <option>검색</option>
+                <option>SNS</option>
+                <option>기타</option>
+        
+            </select>
+           <li><label>메모
+            <textarea rows="5" cols="40
+        ">남길 말씀이 있다면 여기에</textarea>
+        </label></li>
+           <li><label for="birth">생년월일</label> <input type="date" id="birth"></li>
+
+    </fieldset>
+        <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name="pack">메일수신 <input type="radio" name="pack" checked>메일 수신 안함 
+        </fieldset>
+    </ul>
+
+       <div>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+       </div>
+</form>
+
+</body>
+</html>

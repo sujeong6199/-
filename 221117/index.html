@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.<hr></p>
+            <b>개인정보</b>
+            <ul style="list-style:none;">
+            <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="공백없이 입력하세요" autofocus>   
+            </li>
+            
+            <li>
+            <label for="tel">연락처</label>
+            <input type="number" id="tel">
+            </li>
+        </ul>
+            
+
+        <p><b>지원 분야</b></p>
+        <blockquote><input type="radio" name="event" id="pub">
+        <label for="pubulish">웹 퍼블리싱</label><br>
+
+        <input type="radio" name="event" id="develop">
+        <label for="develop">웹 애플리케이션 개발</label><br>
+        
+        <input type="radio" name="event" id="change">
+        <label for="change">개발 환경 개선</label>
+        </blockquote>
+
+        <p><b>지원 동기</b></p>
+        <textarea cols="30" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+        
+        <div>
+            <button type="submit" value="yes">접수하기</button>
+            <button type="reset" value="no">다시쓰기</button>
+        </div>
+
+
+        
+        </fieldset>
+    
+        <table border="1" style="border-collapse: collapse;">
+            <tbody>
+            
+            <tr>
+             <th style="color:rgb(179, 31, 15)" colspan="2">필수입력사항</th>
+             <td></td>   
+            </tr>
+           
+
+            <colgroup cols style="background-color:darkorange">
+            <tr>
+                <th>이름</th>
+                
+                 <td><label for="username">이름</label>
+                    <input type="text" id="username"></td>
+            </tr>
+
+            <tr>
+                <th>주민등록번호</th>
+                <td><label for="number"></label>
+                    <input type="text" id="number">
+                    <span>-</span>
+                 
+                    <label for="number2"></label>    
+                    <input type="password" id="number2">
+                    <br><p>256 bit 암호화 값으로 저장 됩니다.</p>
+
+                    
+               
+                </td>
+            </tr>
+
+            <tr>
+                <th>아이디</th>
+                <td><label for="user-id"></label>
+                    <input type="text" id="user-id">
+                </td>
+            </tr>
+
+            <tr>
+                <th>비밀번호</th>
+                <td><label for="user-pw"></label>
+                    <input type="password" id="user-pw"></td>
+            </tr>
+             
+
+            <tr>
+                <th>비밀번호 확인</th>
+                <td><label for="user-pw2"></label>
+                    <input type="password" id="user-pw2"></td>
+            </tr>
+
+            <tr>
+                <th>생년월일</th>
+                <td>
+                    <input type="number" id="year">
+                    <label for="year">년</label>
+
+                    <label></label>
+                    <input type="">
+                </td>
+            </tr>
+
+            <tr>
+                <th>E-mail</th>
+                <td>
+                    <label for="user-email"></label>
+                    <input type="text" id="user-email">
+                    <span>@</span>
+                 
+                    <label for="user-email2"></label>    
+                    <input type="text" id="user-email2">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>E-mail 수신여부</th>
+                <td>
+                
+                <input type="radio" name="pack" id="yes">
+                <label for="yes">예</label>
+                
+                <input type="radio" name="pack" id="no">
+                <label for="no">아니오</label>
+            
+                </td>
+            </tr>
+
+            
+            <tr>
+                <th>우편번호</th>
+                <td>
+                    <label for="number2"></label>
+                    <input type="text" id="number2">
+                    <span>-</span>
+                 
+                    <label for="number2"></label>    
+                    <input type="text" id="number2">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>주소</th>
+                <td><label for="address"></label>
+                    <input type="text" id="address">
+                   
+                    <br>
+
+                    <label for="address2"></label>
+                    <input type="text" id="address2"></td>    
+            </tr>
+
+            <tr>
+                <th>전화번호</th>
+                <td>
+                 <select>
+                  <option value="02">02</option>
+                  <option value="031">031</option>  
+             
+                 </select>
+
+                 <label for="number3"></label>
+                    <input type="text" id="number3">
+                    <span>-</span>
+                 
+                    <label for="number3"></label>    
+                    <input type="text" id="number3">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>핸드폰번호</th>
+                <td>
+                    <select>
+                        <option value="010">010</option>
+                        
+                   
+                       </select>
+      
+                       <label for="number4"></label>
+                          <input type="text" id="number4">
+                          <span>-</span>
+                       
+                          <label for="number5"></label>    
+                          <input type="text" id="number5">
+        
+                </td>
+            </tr>
+             
+            <tr>
+                <th style="color:salmon" colspan="2">필수입력사항</th>
+                <td></td> 
+                
+            </tr>
+             
+            <tr>
+                <th>가입경로</th>
+                <td>
+                    <select>
+                        <option value="a">==가입동기==</option>  
+                </td>
+            </tr>
+             
+            <tr>
+                <th>결혼여부</th>
+                <td>
+                    <input type="radio" name="event" id="no2">
+                    <label for="no2">미혼</label>
+                    
+                    <input type="radio" name="event" id="yes2">
+                    <label for="yes2">기혼</label>
+
+
+                </td>
+            </tr>
+              
+            <tr>
+                <th>직업</th>
+                <td>
+                    <select>
+                        <option value="b">==직업선택==</option>  
+                </td>
+            </tr>
+            
+            
+           
+             </colgroup>
+             
+             
+             <tr><th></th></tr>
+             <div>
+                <button type="submit">등록</button>
+                <button type="reset">취소</button>
+             </div>
+            </th></tr>
+        </table>
+    
+    </tbody>
+    
+    
+    </form>
+</body>
+</html>

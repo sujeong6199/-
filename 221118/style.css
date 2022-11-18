@@ -1,0 +1,5 @@
+body p:nth-of-type(1){
+    padding: 10px;
+    background-color: aqua;
+    color:darkcyan;
+}

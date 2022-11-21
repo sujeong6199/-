@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Pen+Script&display=swap');
+
+body:nth-child()
+{
+    font-family: 굴림123, 돋움;
+    font-size: xx-large;
+
+}
+
+@font-face{
+    font-family: "Hamlet";
+    src: url('../fonts/Hahmlet-Medium.ttf') format('truetype');
+}
+
+h1{color:red}
+ol{color:green}
+#a{font: size 30px;}

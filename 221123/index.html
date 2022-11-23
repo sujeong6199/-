@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: content-box;
+        }
+        h1{
+            width: 300px;
+        }
+        h1,div,span,p {
+            border: 1px solid black;
+        }
+        .a{color:red;}
+        
+        p {
+        padding: left 50px;
+        padding: top 30px;
+    }
+        span{
+            display : inline-block;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        h2{
+            border: 3px solid black;
+            width: 300px;
+        }
+        .c-box{
+            box-sizing: content-box;
+        }
+        .b-box{
+            box-sizing: border-box;
+        }
+        h3{
+            border:3px solid black;
+            width: 400px;
+            padding: 10px;
+
+        }
+        .box1{
+            width: 200px;
+            height: 100px;
+            box-shadow: 2px -2px 5px 0px;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            box-shadow: 5px -3px 25px 3px blue inset;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹 기본 요소</h1>
+    <div>
+        웹 기본 요소에는
+        <p class="a">HTML, CSS</p>
+        <p class="a">HTML, CSS</p>
+        <p class="a">HTML, CSS</p>
+        <p class="a">HTML, CSS</p>
+        <p class="a">HTML, CSS</p>
+        그리고
+    </div>
+        <p>자바스크립트가<br>있다.</p>
+
+        <h1>웹 기본 요소</h1>
+        <div>
+            웹 기본 요소에는
+            <span class="a">HTML, CSS</span>
+            <span class="a">HTML, CSS</span>
+            <span class="a">HTML, CSS</span>
+            <span class="a">HTML, CSS</span>
+            <span class="a">HTML, CSS</span>
+            그리고
+        </div>
+            <p>자바스크립트가<br>있다.</p>
+
+
+
+
+        <h2 class="c-box">300px + border 3px</h2>   
+        <h2 class="b-box">194px + border 3px</h2>   
+
+        <h3 class="c-box">400px + border 3px + padding 10px</h3>
+        <h3 class="b-box">300px + border 3px + padding 10px</h3>
+
+
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+    </body>
+</html>

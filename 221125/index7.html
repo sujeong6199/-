@@ -16,7 +16,7 @@
         #wrap {
             width: 960px;
             margin: auto;
-            background-color: blanchedalmond;
+            
         }
 
         header {
@@ -94,9 +94,6 @@
             height: 520px;
             float: left;
 
-
-
-
         }
 
         #sidemenu,
@@ -155,70 +152,57 @@
             background-color: gray;
         }
 
-        #announce {
-            clear: left;
-        }
+       #announce{
+        clear:left;
+       }
+       #announce > div{
+        width:480px;
+        padding:20px;
+        float:left;
+       }
+       #announce1{
+        border-right:0.5px solid gray;
+        border-bottom:0.5px solid gray;
+       }
+       #announce2{
+        border-left:0.5px solid gray;
+        border-bottom:0.5px solid gray;
+       }
+       #announce3{
+        border-top:0.5px soled gray;
+        border-right:0.5px solid gray;
+       }
 
-        #announce>div {
-            width: 480px;
-
-            float: left;
-            padding: 20px
-        }
-
-        #annouce1 {
-            border-right: 0.5px solid gray;
-            border-bottom: 0.5px solid gray;
-        }
-
-        #annouce2 {
-            border-left: 0.5px solid gray;
-            border-bottom: 0.5px solid gray;
-        }
-
-        #annouce3 {
-            border-top: 0.5px solid gray;
-            border-right: 0.5px solid gray;
-        }
-
-        #annouce4 {
-            border-top: 0.5px solid gray;
-            border-left: 0.5px solid gray;
-        }
-
-        .atitle,
-        .atable,
-        .apage {
-            float: left;
-        }
-
-        .atitle {
-            width: 130px;
-        }
-
-        .atitle h3 {
-            font-size: 17px;
-            margin-bottom: 40px;
-        }
-
-        .atable td {
-            padding: 3px;
-        }
-
-        .atable {
-            width: 289px;
-        }
-
-        .apage {
-            width: 20px;
-        }
-        #underbar{
-            text-decoration: underline;
-            font-weight: bold;}
-        .tos ul li{
-            float:left;
-        }
-
+       #announce4{
+        border-left: 0.5px solid gray;
+        border-top:0.5px solid gray;
+       }
+       .atitle , .atable , .apage{ float:left;}
+       .atitle{width:130px;}
+       .atitle h3{
+        font-size:17px;
+        margin-bottom:40px;
+       }
+       .atitle button{
+        border:none;
+        padding:2px 5px 2px 5px;
+        background-color: #555;
+        color:white;
+       }
+       .atable{
+        width:280px;
+       }
+       .atable td{
+        padding:3px;
+       }
+       .apage{
+        width:20px;
+       }
+       .pageup{
+        margin-bottom: 40px;
+       }
+       
+        
     </style>
 </head>
 
@@ -266,139 +250,139 @@
                 <article id="menu15">공공언어 개선</article>
                 <article id="menu16">모두의 말뭉치</article>
             </section>
-
+            
             <section id="announce">
-
-                <div id="annouce1">
-                    
-                    <h3 class="atitle">공지사항</h3>
-                    <button type="button">
-                        +더보기
-                    </button>
-
-                    <table class="atable">
-                        <tbody>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="apage">
-                        <div class="apageup">^</div>
-                        <div class="apagedown">^</div>
-                    </div>
-
-
-
-                </div>
-                <div id="annouce2">
+                <div id="announce1">
                     <div class="atitle">
-                    <h3>입찰공고</h3>
-                    <button type="button">
-                        +더보기
-                    </button>
+                        <h3>공지사항</h3>
+                        <button type>+더보기</button>
                     </div>
-
-                    <table class="atable">
-                        <tbody>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
+                    <div class="atable">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td> 
+                                </tr>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td>  
+                                </tr>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td>  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="apage">
-                        <div class="apageup">^</div>
-                        <div class="apagedown">v</div>
+                        <div class="pageup">^</div>
+                        <div>v</div>
                     </div>
                 </div>
 
-
-                <div id="annouce3">
-                    <h3 class="atitle">보도자료</h3>
-                    <button type="button">
-                        +더보기
-                    </button>
-
-                    <table class="atable">
+                <div id="announce2">
+                    <div class="atitle">
+                        <h3>입찰 공고</h3>
+                        <button type>+더보기</button>
+                </div>
+                <div class="atable">
+                    <table>
                         <tbody>
                             <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>  
                             </tr>
                             <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>  
                             </tr>
                             <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>  
                             </tr>
                         </tbody>
-                    </table>
-
-                    <div class="apage">
-                        <div class="apageup">^</div>
-                        <div class="apagedown">^</div>
-                    </div>
+                  </table>
                 </div>
-
-                <div id="annouce4">
-                    <h3 class="atitle">학회/행사/기타</h3>
-                    <button type="button">
-                        +더보기
-                    </button>
-
-                    <table class="atable">
-                        <tbody>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                            <tr>
-                                <td>[채용] 국립국어원~~2022.11.28</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="apage">
-                        <div class="apageup">^</div>
-                        <div class="apagedown">^</div>
-                    </div>
+                <div class="apage">
+                    <div class="pageup">^</div>
+                    <div>v</div>
                 </div>
-
-
-
-
-
-
-            </section>
-
-        </main>
-        <footer>
-            <section class="tos">
-             
-        <span id="underbar">개인정보 처리 방침.</span></li>
+                </div>
                 
-            </section>
-            <section class="foot">
-                <div id="address"></div>
-                <div id="wamark"></div>
+                <div id="announce3">
+                    <div class="atitle">
+                        <h3>보도 자료</h3>
+                        <button type="button">+더보기</button>
+                     </div>
+                <div class="atable">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>   
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>   
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원 ~~</td>
+                                <td>2022. 11. 28.</td>   
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="apage">
+                    <div class="pageup">^</div>
+                    <div>v</div>
+                </div>
+            </div>
 
+                <div id="announce4">
+                  <div class="atitle">
+                    <h3>학회/행사/기타</h3>
+                    <button type="button">+더보기</button>
+                </div>
+                    <div class="atable">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td>   
+                                </tr>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td>   
+                                </tr>
+                                <tr>
+                                    <td>[채용] 국립국어원 ~~</td>
+                                    <td>2022. 11. 28.</td>   
+                                </tr> 
+                            </tbody>
+                        </table>
+                </div>  
+                <div class="apage">
+                    <div class="apage">^</div>
+                    <div>v</div>
+                </div>
+            </div>
             </section>
-        </footer>
+        </main>
+            <hr>
+            <footer>
+                <section class="tos">
+                    <span class="privacy">개인정보 처리 방침</span>. 정보공개 . 저작권 정책 . 무료 배포 프로그램 . 오시는길 . 정부·언론 외래어 심의 공동위원회
+                </section>
+                <section class="footer2">
+                    <div id="address">
+
+                    </div>
+                    <div id="wamark">
+
+                    </div>
+                </section>
+             </footer>
     </div>
 </body>
 

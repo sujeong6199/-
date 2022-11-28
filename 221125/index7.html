@@ -1,95 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
-    #wrap{
-        width:960px;
-        margin:auto;
-        background-color: blanchedalmond;
-    }
-    header{
-        width:100%;
-        height:120px;
-        background-color: aqua;
-    }
-    #logo{
-        width:25%;
-        height:120px;
-        
-        float: left;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    #logo img{
-        margin: 34px 0px 34px 10px;
-    }
-    #search{
-        width:50%;
-        height:120px;
-        
-        float: left;
-    }
-    #searchbox{
-        border:3px solid navy;
-        width:100%;
-        height:50px;
-        margin:34px 0px 34px 0px;
 
-    }
-    
-    #qmenu{
-        width:25%;
-        height:120px;
-        
-        float:left;
-        
-    }
+        #wrap {
+            width: 960px;
+            margin: auto;
+            background-color: blanchedalmond;
+        }
 
-    #qmenu button, #qmenu span{
-        float:right;
-        
-        margin:50px 0px 34px 0px;
-    }
-    #qmenu button{
-        border:1px solid gray;
-        width:25px;
-        height:25px;
-        
-    }
+        header {
+            width: 100%;
+            height: 120px;
+            background-color: aqua;
+        }
 
-    #qmenu span{
-        font-size: 14px;
-        margin-left:5px;
-    }
- </style>
+        #logo {
+            width: 25%;
+            height: 120px;
+
+            float: left;
+        }
+
+        #logo img {
+            margin: 34px 0px 34px 10px;
+        }
+
+        #search {
+            width: 50%;
+            height: 120px;
+
+            float: left;
+        }
+
+        #searchbox {
+            border: 3px solid navy;
+            width: 100%;
+            height: 50px;
+            margin: 34px 0px 34px 0px;
+
+        }
+
+        #qmenu {
+            width: 25%;
+            height: 120px;
+
+            float: left;
+
+        }
+
+        #qmenu button,
+        #qmenu span {
+            float: right;
+
+            margin: 50px 0px 34px 0px;
+        }
+
+        #qmenu button {
+            border: 1px solid gray;
+            width: 25px;
+            height: 25px;
+
+        }
+
+        #qmenu span {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        #sidemenu ul {
+            list-style-type: none;
+        }
+
+        #sidemenu ul li {
+            margin-bottom: 30px;
+            color: white;
+            padding: 8px;
+        }
+
+        #sidemenu {
+            background-color: navy;
+            width: 120px;
+            height: 520px;
+            float: left;
+
+
+
+
+        }
+
+        #sidemenu,
+        #menu1,
+        #menu2 {
+            float: left;
+        }
+
+        #mainimage {
+            width: 440px;
+
+            float: left;
+        }
+
+        #mainimage img {
+            width: 100%;
+        }
+
+        #menu1 {
+            width: 200px;
+            float: left;
+        }
+
+        #menu1 article,
+        #menu2 article {
+            height: 173.33px;
+        }
+
+        #menu2 {
+            width: 200px;
+
+            float: left;
+        }
+
+        #menu11 {
+            background-color: aquamarine;
+        }
+
+        #menu12 {
+            background-color: blue;
+        }
+
+        #menu13 {
+            background-color: chartreuse;
+        }
+
+        #menu14 {
+            background-color: chocolate;
+        }
+
+        #menu15 {
+            background-color: crimson;
+        }
+
+        #menu16 {
+            background-color: gray;
+        }
+
+        #announce {
+            clear: left;
+        }
+
+        #announce>div {
+            width: 480px;
+
+            float: left;
+            padding: 20px
+        }
+
+        #annouce1 {
+            border-right: 0.5px solid gray;
+            border-bottom: 0.5px solid gray;
+        }
+
+        #annouce2 {
+            border-left: 0.5px solid gray;
+            border-bottom: 0.5px solid gray;
+        }
+
+        #annouce3 {
+            border-top: 0.5px solid gray;
+            border-right: 0.5px solid gray;
+        }
+
+        #annouce4 {
+            border-top: 0.5px solid gray;
+            border-left: 0.5px solid gray;
+        }
+
+        .atitle,
+        .atable,
+        .apage {
+            float: left;
+        }
+
+        .atitle {
+            width: 130px;
+        }
+
+        .atitle h3 {
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .atable td {
+            padding: 3px;
+        }
+
+        .atable {
+            width: 289px;
+        }
+
+        .apage {
+            width: 20px;
+        }
+        #underbar{
+            text-decoration: underline;
+            font-weight: bold;}
+        .tos ul li{
+            float:left;
+        }
+
+    </style>
 </head>
+
 <body>
-   <div id="wrap">
-    <header>
-        <div id="logo"><img src="img/logo.png"></div>
-        <div id="search">
-        <input id="searchbox" type="search" placeholder=" 검색어를 입력하세요">
-        </div>
+    <div id="wrap">
+        <header>
+            <div id="logo"><img src="img/logo.png"></div>
+            <div id="search">
+                <input id="searchbox" type="search" placeholder=" 검색어를 입력하세요">
+            </div>
 
-        <div id="qmenu">
-            <span>누리집 안내 지도</span>
-            <button>+</button><button>-</button>
-            
-           
-        </div>
-    </header>
+            <div id="qmenu">
+                <span>누리집 안내 지도</span>
+                <button>+</button><button>-</button>
 
-    <main>
 
-    </main>
-    <footer></footer>
-   </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="sidemenu">
+                <ul>
+                    <li>지식</li>
+                    <li>개선</li>
+                    <li>교육</li>
+                    <li>수어/점자</li>
+                    <li>참여</li>
+                    <li>알림</li>
+                    <li>자료</li>
+                    <li>소개</li>
+                </ul>
+            </section>
+            <section id="mainimage">
+                <img src="img/img_visual.png">
+            </section>
+
+            <section id="menu1">
+                <article id="menu11">사전</article>
+                <article id="menu12">어문 규범</article>
+                <article id="menu13">교육</article>
+            </section>
+
+            <section id="menu2">
+                <article id="menu14">국어 상담</article>
+                <article id="menu15">공공언어 개선</article>
+                <article id="menu16">모두의 말뭉치</article>
+            </section>
+
+            <section id="announce">
+
+                <div id="annouce1">
+                    
+                    <h3 class="atitle">공지사항</h3>
+                    <button type="button">
+                        +더보기
+                    </button>
+
+                    <table class="atable">
+                        <tbody>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="apage">
+                        <div class="apageup">^</div>
+                        <div class="apagedown">^</div>
+                    </div>
+
+
+
+                </div>
+                <div id="annouce2">
+                    <div class="atitle">
+                    <h3>입찰공고</h3>
+                    <button type="button">
+                        +더보기
+                    </button>
+                    </div>
+
+                    <table class="atable">
+                        <tbody>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="apage">
+                        <div class="apageup">^</div>
+                        <div class="apagedown">v</div>
+                    </div>
+                </div>
+
+
+                <div id="annouce3">
+                    <h3 class="atitle">보도자료</h3>
+                    <button type="button">
+                        +더보기
+                    </button>
+
+                    <table class="atable">
+                        <tbody>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="apage">
+                        <div class="apageup">^</div>
+                        <div class="apagedown">^</div>
+                    </div>
+                </div>
+
+                <div id="annouce4">
+                    <h3 class="atitle">학회/행사/기타</h3>
+                    <button type="button">
+                        +더보기
+                    </button>
+
+                    <table class="atable">
+                        <tbody>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                            <tr>
+                                <td>[채용] 국립국어원~~2022.11.28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="apage">
+                        <div class="apageup">^</div>
+                        <div class="apagedown">^</div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </section>
+
+        </main>
+        <footer>
+            <section class="tos">
+             
+        <span id="underbar">개인정보 처리 방침.</span></li>
+                
+            </section>
+            <section class="foot">
+                <div id="address"></div>
+                <div id="wamark"></div>
+
+            </section>
+        </footer>
+    </div>
 </body>
+
 </html>

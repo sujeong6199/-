@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:blue;
+        }
+        section>p{
+            text-decoration: underline;
+        }
+        h1+p{
+            background-color: aqua;
+        }
+        h1~p{
+            font-weight: bold;
+        }
+        #menu a[href]{
+            background-color: blanchedalmond;
+            text-decoration: none;
+        }
+        #link a[target="_blank"]{
+            background-color: blue;
+        }
+        [abc ~="b"]{
+            border:3px solid black;
+        }
+        [abc|="ab"]{
+            background-color:blueviolet;
+        }
+       #country [lang ^="en"]{
+            background-color: beige;
+        }
+        #country [lang $= "asia"]{
+            color:brown
+        }
+        #link[href *="google"]{
+            color:red;
+        }
+   
+    </style>
+</head>
+<body>
+    <section>
+        <p>웹 알아보기</p>
+        <h1>웹 구성 요소</h1>
+        <p>언어</p>
+        <div>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+        <p>개발 환경</p>
+    </section>
+    <ul id="menu">
+        <li><a >메인 메뉴</a></li>
+        <li><a href="">파스타</a></li>
+        <li><a href="" >피자</a></li>
+        <li><a href="">햄버거</a></li>
+        <li><a href="">주스</a></li>
+    </ul>
+
+    <ul id="link">
+        <li><a href="https://www.naver.com/">네이버 바로가기</a></li>
+        <li><a href="https://www.google.com/">구글 바로가기</a></li>
+        <li><a href="https://sbsart.com/" target="_blank">학원 사이트 바로가기</a></li>
+        
+    </ul>
+
+    <ul id="line2">
+        <li><a href="" abc="a">신림</a></li>
+        <li><a href="" abc="a">봉천</a></li>
+        <li><a href="" abc="b">서울대입구</a></li>
+        <li><a href="" abc="b c">낙성대</a></li>
+        <li><a href="" abc="ab-c">사당</a></li>
+    </ul>
+    <ul id="country">
+        <li><a href="" lang="ko-asia">한국</a></li>
+        <li><a href="" lang="en-asia">미국</a></li>
+        <li><a href="" lang="jp-asia">일본</a></li>
+        <li><a href="" lang="en-asia">영국</a></li>
+        <li><a href="" lang="cn-asia">중국</a></li>
+    </ul>
+</body>
+</html>

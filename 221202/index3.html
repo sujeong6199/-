@@ -6,90 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      
         #wrap section h2:only-of-type{
             color:red;
         }
-
         #wrap article h2:only-child{
             color:blue;
         }
         #wrap section:first-child{
-            background-color: aquamarine;
+            background-color: aqua;
         }
         #wrap section:first-child ul li:last-child{
-            background-color: beige;
+            background-color: blueviolet;
         }
         #wrap article:first-of-type{
-            background-color: brown;
-        }
-        #wrap section:last-of-type{
-            background-color: antiquewhite;
-        }
-        #wrap section:nth-child(2){
             background-color: beige;
         }
-        #wrap section:nth-child(2) ul li:nth-last-child(3){
-            color:green;
+        #wrap section:last-of-type{
+            background-color: green;
+        }
+        #wrap section:nth-child(2){
+            background-color: aquamarine;
+        }
+        #wrap section:nth-child(2) ul li:nth-child(3){
+            color:blue;
             font-weight: bold;
         }
-
         #wrap article:nth-of-type(2){
-            background-color: bisque;
+            background-color: pink;
         }
-
         #wrap article:nth-of-type(2) ul li:nth-last-of-type(1){
-            color: blue;
+            color: purple;
             font-weight: bold;
         }
-
         #line6 ul li:nth-child(even){
             background-color: blueviolet;
         }
-        #line6 ul li:nth-last-child(odd){
-            background-color: red;
+        #line6 ul li:nth-child(odd){
+            background-color: blueviolet;
         }
-        #line7 ul li:nth-chid(3n+1){
-            background-color: olive;
-        }
-        #line7 ul li:nth-chid(2n){
-            color:burlywood;
-            font-weight:bold;
+        #line7 ul li:nth-child(2n){
+            background-color: blueviolet;
         }
         #line8 p::first-line{
             text-decoration: underline;
         }
         #line8 ul li::first-letter{
-            color:pink;
+            color: brown;
+            font-weight: bold;
         }
         #line8 p::first-letter{
-            color:red;
-            font-size: 2em;
+            color:green;
+            font-size:2em;
             font-weight: bold;
-            float:left;
+            float: left;
             padding-right: 5px;
         }
-
-        #line9 ul li.express::after{
+        
+        #line9 ul li.express::after {
             content:"급행";
-            background-color: beige;
+            background-color: red;
             color:white;
             padding:2px 4px;
-            margin:2px 5px;
+            margin:0 5px;
             border-radius: 2px;
             font-size:0.5em;
         }
 
         #line9 ul li:not(.express)::before{
             content:"일반";
-            background-color: aquamarine;
+            background-color: darkgreen;
             color:white;
             padding:2px 4px;
-            margin:2px 5px;
+            margin:0 5px;
             border-radius: 2px;
             font-size:0.5em;
         }
-    </style>
+
+      
+            
+
     </style>
 </head>
 <body>
@@ -127,41 +122,40 @@
         <article>
             <h2>5호선</h2>
             <ul>
-                <li>충무로</li>
-                <li>동대입구</li>
-                <li>약수</li>
-                <li>금호</li>
+                <li>청구</li>
+                <li>신금호</li>
+                <li>행당</li>
+                <li>왕십리</li>
             </ul>
         </article>
         <article id="line6">
             <h2>6호선</h2>
             <ul>
-                <li>충무로</li>
-                <li>동대입구</li>
-                <li>약수</li>
-                <li>금호</li>
-                <li>금호</li>
+                <li>월곡</li>
+                <li>고려대</li>
+                <li>안암</li>
+                <li>보문</li>
+                <li>창신</li>
             </ul>
         </article>
         <article id="line7">
             <h2>7호선</h2>
             <ul>
-                <li>충무로</li>
-                <li>동대입구</li>
-                <li>약수</li>
-                <li>금호</li>
-                <li>금호</li>
-                <li>동대입구</li>
-                <li>약수</li>
+                <li>마들</li>
+                <li>노원</li>
+                <li>하계</li>
+                <li>공릉</li>
+                <li>태릉입구</li>
+                <li>먹골</li>
             </ul> 
         </article>
 
         <article id="line8">
             <h2>8호선</h2>
             <ul>
-                <li>충무로</li>
-                <li>동대입구</li>
-                <li>약수</li>    
+                <li>암사</li>
+                <li>천호</li>
+                <li>강동구청</li>    
             </ul> 
             <p>
                 Lorem Ipsum is simply dummy text of the

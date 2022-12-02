@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width:720px;
+            margin:0 auto;
+        }
+        .navi{
+            width:720px;
+            height: 60px;
+            border-bottom:3px solid black;
+            padding-bottom:5px;
+        }
+        ul{
+            list-style: none;
+        }
+        .navi ul li{
+            float: left;
+            width:140px;
+            padding:10px;
+        }
+        .navi a:link, .navi a:visited{
+            display: block;
+            color:black;
+            text-decoration: none;
+            text-align: center;
+            font-size:14px;
+            padding:5px;
+        }
+        .navi a:hover ,.navi a:focus{
+            background-color: #333;
+            color:white;
+            
+        }
+        .navi a:active{
+            background-color: blue;
+        }
+        .contents{
+            width:400px;
+            border:1px solid black;
+            border-radius: 5px;
+            padding:20px;
+            margin: 20px auto;;
+        }
+        #intro:target{
+            background-color: blue;
+            color:white;
+        }
+
+        #product:target{
+            background-color: blueviolet;
+            color:thistle
+        }
+        #board:target{
+            background-color: yellow;
+            
+        }
+        #contact{
+            border:1px solid black;
+            border-radius: 5px;
+            padding:20px;
+            margin:20px auto;
+            width:400px;
+        }
+        #contact fieldset{
+            border:1px solid #ccc;
+            margin-bottom:30px;
+        }
+
+        #contact ul{
+            list-style: none;
+        }
+
+        #contact ul li{
+            line-height:30px;
+            padding:5px 10px;
+        }
+        #contact input:checked + label{
+            color:red;
+            font-weight: bold;
+        }
+       #contact input:not([type=radio])
+        {
+        border:1px solid #ccc;
+        border-radius:3px;
+        padding:5px;
+        width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro">회사소개</a></li>
+                <li><a href="#product">제품소개</a></li>
+                <li><a href="#board">게시판</a></li>
+                <li><a href="#path">오시는 길</a></li>
+            </ul>
+        </nav>
+        <div id="intro" class="contents">
+            <h2>회사 소개</h2>
+            <p>
+                t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centu   
+            
+            </p>
+        </div>
+        <div id="product" class="contents">
+            <h2>제품소개</h2>
+            <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centu</p>
+        </div>
+        <div id="board" class="contents">
+            <h2>게시판</h2>
+            <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centu</p>
+        </div>
+        <forfm>
+            <fieldset id="contact">
+                <legned>개인 정보</legned>
+                <ul>
+                    <li><label for="username">이름</label>
+                    <input type="text" id="username" 
+                    name="username" required>
+                    </li>
+
+                    <li><label for="userphone">연락처</label>
+                        <input type="tel" id="userphone" 
+                        name="userphone" required>
+                        </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legned>문의 선택</legned>
+                <ul>
+                    <li>
+                    <input type="radio" name="ask" id="ask_p">
+                    <label for="ask_p">제품</label></li>
+
+                    <li>
+                        <input type="radio" name="ask" id="ask_c">
+                        <label for="">일반</label></li>
+
+                        <li>
+                            <input type="radio" name="ask" id="ask_p">
+                            <label for=""></label></li>
+                </ul>
+            </fieldset>
+        </forfm>
+    </div>
+</body>
+</html>

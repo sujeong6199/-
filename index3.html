@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #wrap section h2:only-of-type{
+            color:red;
+        }
+
+        #wrap article h2:only-child{
+            color:blue;
+        }
+        #wrap section:first-child{
+            background-color: aquamarine;
+        }
+        #wrap section:first-child ul li:last-child{
+            background-color: beige;
+        }
+        #wrap article:first-of-type{
+            background-color: brown;
+        }
+        #wrap section:last-of-type{
+            background-color: antiquewhite;
+        }
+        #wrap section:nth-child(2){
+            background-color: beige;
+        }
+        #wrap section:nth-child(2) ul li:nth-last-child(3){
+            color:green;
+            font-weight: bold;
+        }
+
+        #wrap article:nth-of-type(2){
+            background-color: bisque;
+        }
+
+        #wrap article:nth-of-type(2) ul li:nth-last-of-type(1){
+            color: blue;
+            font-weight: bold;
+        }
+
+        #line6 ul li:nth-child(even){
+            background-color: blueviolet;
+        }
+        #line6 ul li:nth-last-child(odd){
+            background-color: red;
+        }
+        #line7 ul li:nth-chid(3n+1){
+            background-color: olive;
+        }
+        #line7 ul li:nth-chid(2n){
+            color:burlywood;
+            font-weight:bold;
+        }
+        #line8 p::first-line{
+            text-decoration: underline;
+        }
+        #line8 ul li::first-letter{
+            color:pink;
+        }
+        #line8 p::first-letter{
+            color:red;
+            font-size: 2em;
+            font-weight: bold;
+            float:left;
+            padding-right: 5px;
+        }
+
+        #line9 ul li.express::after{
+            content:"급행";
+            background-color: beige;
+            color:white;
+            padding:2px 4px;
+            margin:2px 5px;
+            border-radius: 2px;
+            font-size:0.5em;
+        }
+
+        #line9 ul li:not(.express)::before{
+            content:"일반";
+            background-color: aquamarine;
+            color:white;
+            padding:2px 4px;
+            margin:2px 5px;
+            border-radius: 2px;
+            font-size:0.5em;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section>
+            <h2>1호선</h2>
+            <ul>
+                <li>종각</li>
+                <li>시청</li>
+                <li>서울역</li>
+                <li>남영</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2호선</h2>
+            <ul>
+                <li>신촌</li>
+                <li>이대</li>
+                <li>아현</li>
+                <li>충정로</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3호선</h2>
+            <ul>
+                <li>충무로</li>
+                <li>동대입구</li>
+                <li>약수</li>
+                <li>금호</li>
+            </ul>
+        </section>
+        <article>
+            <h2>4호선</h2>
+        </article>
+        <article>
+            <h2>5호선</h2>
+            <ul>
+                <li>충무로</li>
+                <li>동대입구</li>
+                <li>약수</li>
+                <li>금호</li>
+            </ul>
+        </article>
+        <article id="line6">
+            <h2>6호선</h2>
+            <ul>
+                <li>충무로</li>
+                <li>동대입구</li>
+                <li>약수</li>
+                <li>금호</li>
+                <li>금호</li>
+            </ul>
+        </article>
+        <article id="line7">
+            <h2>7호선</h2>
+            <ul>
+                <li>충무로</li>
+                <li>동대입구</li>
+                <li>약수</li>
+                <li>금호</li>
+                <li>금호</li>
+                <li>동대입구</li>
+                <li>약수</li>
+            </ul> 
+        </article>
+
+        <article id="line8">
+            <h2>8호선</h2>
+            <ul>
+                <li>충무로</li>
+                <li>동대입구</li>
+                <li>약수</li>    
+            </ul> 
+            <p>
+                Lorem Ipsum is simply dummy text of the
+                scrambled it tLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u
+                nknown printer took a galley of type an
+                d scrambled it t
+            </p>
+        </article>
+        <article id="line9">
+            <h2>9호선</h2>
+            <ul>
+                <li>개화</li>
+                <li class="express">김포공항</li>
+                <li>공항시장</li>
+                <li>신방화</li>
+                <li class="express">마곡나루</li>        
+            </ul> 
+         
+        </article>
+    </div>
+</body>
+</html>

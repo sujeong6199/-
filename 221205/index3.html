@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:100px; height: 100px; border:1px solid black; margin-bottom: 50px;}
+        span{
+            width:100px;
+            height: 100px;
+            background-color: chocolate;
+            display: block;
+        }
+        #movex:hover span{
+            transform: translateX(30px);
+        }
+        #movey:hover span{
+            transform: translateY(20px);
+        }
+
+        #movexy:hover span{
+            transform: translate(30px,20px);
+        }
+        #scalex:hover span{
+            transform:scaleX(2.0);
+        }
+        #scaley:hover span{
+            transform: scaleY(-0.7);
+        }
+        #scalexy:hover span{
+            transform: scaleY(-2.0, 0.7);
+        }
+        #rotate:hover span{
+            transform: rotate(30deg);
+        }
+        #rotate2:hover span{
+            transform: rotate(-60deg);
+        }
+
+        #rotatex:hover span{
+            transform: rotatex(40deg);
+        }
+        #rotatey:hover span{
+            transform: rotatey(30deg);
+        }
+
+        #rotatez:hover span{
+            transform: rotatez(30deg);
+        }
+        #rotate3d:hover span{
+            transform: rotate3d(2.5, 1.2, -1.5,30deg);
+        }
+        #skewx:hover span{
+            transform: skewx(30deg);
+        }
+
+        #skewy:hover span{
+            transform: skewy(-60deg);
+        }
+
+        #skewxy:hover span{
+            transform: skew(30deg,-60deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="movex"><span>movex</span></div>
+    <div id="mobey"><span>movey</span></div>
+    <div id="movexy"><span>movexy</span></div>
+    <div id="scalex"><span>scalex</span></div>
+    <div id="scaley"><span>scaley</span></div>
+    <div id="scalexy"><span>scalexy</span></div>
+    <div id="rotate"><span>rotate</span></div>
+    <div id="rotate2"><span>rotate2</span></div>
+    <div id="rotatex"><span>rotatex</span></div>
+    <div id="rotatey"><span>rotatey</span></div>
+    <div id="rotatez"><span>rotatez</span></div>
+    <div id="rotate3d"><span>rotate3d</span></div>
+    <div id="skewx"><span>skewx</span></div>
+    <div id="skewy"><span>skewy</span></div>
+    <div id="skewxy"><span>skewxy</span></div>
+</body>
+</html>

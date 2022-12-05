@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0px; box-sizing: bordr-box;}
+        #menu ul{ 
+            margin:40px auto; 
+            width:605px;
+            height: 40px;;
+            list-style: none;
+            box-shadow: #ccc 0 3px 4px #888;
+        }
+
+        ul li{
+            float: left;
+            border-right: 1px solid #666;
+            background-color: #ddd;
+        }
+        
+            ul li a:link{
+            display:block;
+            width:80px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #ccc;
+            text-decoration: none;
+            color:black;
+            text-align: center;
+            font-size: 14px;;
+            border:1px solid rgb(170, 168, 168);
+            float:left;
+
+            
+        }
+
+
+      ul li:last-child a:hover{
+        background-color: red; color:white;
+        transform:translatey(-5px);
+    }
+      ul li:not(:last-child) a:hover
+        {background-color: black; color:white;
+        transform:translatey(-5px);
+        }
+    </style>
+        
+       
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+                <li><a href="#">메뉴6</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

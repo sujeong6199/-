@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            margin-right: 50px;
+            
+        }
+
+        section{
+            margin: 30px;
+        }
+        img{
+            border:1px solid #ccc 
+        }
+        
+        section a:first-child img{
+            border: 2px solid red;
+        }
+
+        section a:not(:first-child) img:hover{
+            border: 2px solid blue;
+        }
+
+        section a:not(:first-child) img:active{
+            border: 2px solid blue;
+        }
+
+        section a:not(:first-child) img:focus{
+            border: 2px solid blue;
+        }
+
+
+      
+        h2::before{
+            content: "Hello";
+            color:red;
+        
+        }
+
+        
+        section h2:hover::before{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>HTML!</h2>
+       
+        <a href="#">
+        <img src="img/a.jpg"></a>
+        
+
+      
+        <a href="#"><img src="img/b.jpg"></a>
+        
+        
+        <a href="#"><img src="img/c.jpg"></a>
+        
+    </section>
+</body>
+</html>

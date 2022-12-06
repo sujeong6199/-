@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;;
+        }
+        #box1{
+            width:100px;
+            height: 100px;
+            background-color: aqua;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        #box1:hover{
+            width:200px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        #box2{
+            width:100px;
+            height: 100px;
+            background-color: aqua;
+            transition-property: width, height;
+            transition-duration: 2s, 1s;
+        }
+
+        #box2:hover{
+            width:200px;
+            height: 50px;
+            background-color: blue;
+        }
+
+     
+        section>div{
+            width:100px;
+            height: 50px;
+            float:left;
+            background-color: blue
+            ;
+            color:white;
+            text-align: center;
+            line-height: 50px;
+            transition-property:height;
+            transition-duration:2s;
+        }
+
+        section:hover >div{
+            height: 400px;
+        }
+        #ease{transition-timing-function: ease;}
+        #linear{
+        transition-timing-function: linear;
+        transition-delay: 2s;
+    
+        }
+        #ease-in{transition-timing-function: ease-in;}
+        #ease-out{transition-timing-function: ease-out;}
+        #ease-in-out{transition-timing-function: ease-in-out;}
+        #box3{
+            clear:left;
+            width:100px;
+            height: 100px;
+            background-color: brown;
+            transition: all 3s ease-in;
+        }
+        #box3:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <section>
+    <div id="ease">ease</div>
+    <div id="linear">linear(delay)</div>
+    <div id="ease-in">ease-in</div>
+    <div id="ease-out">ease-out</div>
+    <div id="ease-on-out">ease-in-out</div>
+    
+    </section>
+    <div id="box3">box3</div>
+</body>
+</html>

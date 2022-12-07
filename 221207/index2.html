@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 20px;
+            width:70px;
+            margin: 30px;
+        }
+       
+        #box1{
+          
+            background-color: aqua;
+            
+            animation: move 5s ease infinite alternate;
+           
+        }
+        #box2{
+           
+            background-color: red;
+            
+           
+            animation: move 5s ease-in infinite alternate;}
+       
+        #box3{
+            background-color: blue;
+           
+            animation: move 5s ease-out infinite alternate;      
+        }
+        #box4{
+           
+            background-color: green;
+           
+            animation: move 5s ease-in-out infinite alternate;
+           
+        }
+        #box5{
+          
+            background-color: beige;
+            
+            animation: move 5s linear infinite alternate;
+           
+            
+        }
+        @keyframes move {
+            from{
+            transform:translateX(0px);
+            }
+            to{
+            transform:translateX(40px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div id="box1">ease</div>
+    <div id="box2">ease-in</div>
+    <div id="box3">ease-out</div>
+    <div id="box4">ease-in-out</div>
+    <div id="box5">linear</div>
+   
+</body>
+</html>
